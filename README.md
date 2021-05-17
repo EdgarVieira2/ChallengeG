@@ -33,16 +33,6 @@ Request:
 }
 ```
 
-Observação:
-
-ao criar uma pessoa, se for informado um cep inválido  a API responderá com um erro
-```
-{
-    "message": "Desculpe mas este CEP não pode ser cadastrado pois é invalido",
-    "codigo": 400
-}
-```
-
 Resoponse:
 ```
 {
@@ -69,6 +59,16 @@ curl --location --request POST 'http://localhost:8080/pessoa' \
     "documento":"11111111111"
 }'
 ```
+Observação:
+
+ao criar uma pessoa, se for informado um cep inválido  a API responderá com um erro
+```
+{
+    "message": "Desculpe mas este CEP não pode ser cadastrado pois é invalido",
+    "codigo": 400
+}
+```
+
 ## Consultar todas as pessoas 
 
  GET 'http://localhost:8080/pessoa/
