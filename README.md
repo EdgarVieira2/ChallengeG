@@ -24,6 +24,7 @@ POST 'http://localhost:8080/pessoa/
 
 Request:
 ```
+
 {
     "nome":"Fulano",
     "dataNascimento":"13/04/1970",
@@ -63,7 +64,8 @@ curl --location --request POST 'http://localhost:8080/pessoa' \
  GET 'http://localhost:8080/pessoa/
  
  Response:
- ```
+```
+[
  {
         "id": "60a068512195637b6deabeb3",
         "nome": "Edgar",
@@ -94,6 +96,7 @@ curl --location --request POST 'http://localhost:8080/pessoa' \
         "localidade": "Magé",
         "uf": "RJ"
     }
+ ]   
 ```
 Exemplo:
 ```curl --location --request GET 'http://localhost:8080/pessoa'```
