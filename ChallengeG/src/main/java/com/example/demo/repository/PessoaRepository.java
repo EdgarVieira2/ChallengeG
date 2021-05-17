@@ -7,5 +7,7 @@ import com.example.demo.model.Pessoa;
 
 @Repository
 public interface PessoaRepository extends MongoRepository<Pessoa, String> {
+  
+  public Optional<List<Pessoa>> findByDocumento(String documento);
 
 }
