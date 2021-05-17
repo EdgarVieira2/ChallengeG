@@ -58,7 +58,7 @@ curl --location --request POST 'http://localhost:8080/pessoa' \
     "documento":"11111111111"
 }'
 ```
-## Consultar todas as pessoas por id
+## Consultar todas as pessoas 
 
  GET 'http://localhost:8080/pessoa/
  
