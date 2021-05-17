@@ -100,6 +100,15 @@ curl --location --request POST 'http://localhost:8080/pessoa' \
 ```
 Exemplo:
 ```curl --location --request GET 'http://localhost:8080/pessoa'```
+Observação:
+
+ao criar uma pessoa, se for informado um cep inválido  a API responderá com um erro
+```
+{
+    "message": "Desculpe mas este CEP não pode ser cadastrado pois é invalido",
+    "codigo": 400
+}
+```
 
 ## Consultar pessoas por documento
 
