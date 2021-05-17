@@ -93,7 +93,7 @@ curl --location --request POST 'http://localhost:8080/pessoa' \
         "bairro": "Pico (Santo Aleixo)",
         "localidade": "Magé",
         "uf": "RJ"
-    },
+    }
 ```
 Exemplo:
 ```curl --location --request GET 'http://localhost:8080/pessoa'```
