@@ -14,5 +14,5 @@ public interface PessoaService {
 	
 	public void deletar(String id);
 
-	public Pessoa obterPorDocumento(String documento) throws Exception;
+	public List<Pessoa> obterPorDocumento(String documento) throws Exception;
 }
