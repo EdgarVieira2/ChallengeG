@@ -70,11 +70,11 @@ curl --location --request POST 'http://localhost:8080/pessoa' \
         "id": "60a068512195637b6deabeb3",
         "nome": "Edgar",
         "dataNascimento": "08/08/1995",
-        "cep": "1234154",
-        "documento": "12dasda31414",
-        "bairro": null,
-        "localidade": null,
-        "uf": null
+        "cep": "25912021",
+        "documento": "121231414",
+        "bairro": "Pico (Santo Aleixo)",
+        "localidade": "Magé",
+        "uf": "RJ"
     },
     {
         "id": "60a0788a476a3b229509b326",
