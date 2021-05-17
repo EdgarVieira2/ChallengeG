@@ -45,8 +45,8 @@ public class PessoaServiceImpl implements PessoaService {
 		return this.pessoaRepository.findById(id).orElseThrow(() -> new Exception("Não existe."));
 	}
 	@Override
-	public Pessoa obterPorDocumento(String documento) throws Exception {
-		return this.pessoaRepository.findById(documento).orElseThrow(() -> new Exception("Não existe."));
+	public List<Pessoa> obterPorDocumento(String documento) throws Exception  {
+		return this.pessoaRepository.findByDocumento(documento).orElseThrow(() -> new Exception("Não existe."));
 	}
 	
 
