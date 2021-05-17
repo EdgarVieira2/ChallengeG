@@ -38,7 +38,7 @@ public class PessoaController {
 					+ "   \"codigo\":404\r\n" + "}", HttpStatus.NOT_FOUND);
 		}
 	}
-	@GetMapping("/{documento}")
+	@GetMapping("documento/{documento}")
 	public ResponseEntity<?> obterPorDocumento(@PathVariable String documento) throws Exception{
 		try {
 			Pessoa pessoa = this.pessoaService.obterPorDocumento(documento);
