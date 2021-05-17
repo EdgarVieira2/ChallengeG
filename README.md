@@ -23,14 +23,17 @@ O desafio consiste em uma api para cadastro e busca de pessoa, com consulta de e
 POST 'http://localhost:8080/pessoa/
 
 Request:
+```
 {
     "nome":"Fulano",
     "dataNascimento":"13/04/1970",
     "cep":"25912021",
     "documento":"11111111111"
 }
+```
 
 Resoponse:
+```
 {
     "id": "60a28e6b6d5d4350151856bf",
     "nome": "Fulano",
@@ -41,9 +44,10 @@ Resoponse:
     "localidade": "Magé",
     "uf": "RJ"
 }
+```
 
 Exemplo:
-
+```
 curl --location --request POST 'http://localhost:8080/pessoa' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
@@ -53,12 +57,13 @@ curl --location --request POST 'http://localhost:8080/pessoa' \
     "cep":"25912021",
     "documento":"11111111111"
 }'
-
+```
 ## Consultar todas as pessoas por id
 
  GET 'http://localhost:8080/pessoa/
  
  Response:
+ ```
  {
         "id": "60a0788a476a3b229509b326",
         "nome": "Jenifer",
@@ -69,15 +74,16 @@ curl --location --request POST 'http://localhost:8080/pessoa' \
         "localidade": "Magé",
         "uf": "RJ"
     },
-
+```
 Exemplo:
-curl --location --request GET 'http://localhost:8080/pessoa'
+```curl --location --request GET 'http://localhost:8080/pessoa'```
 
 ## Consultar pessoas por documento
 
 GET 'http://localhost:8080/pessoa/documento/121231414'
 
 Response:
+```
  {
         "id": "60a0788a476a3b229509b326",
         "nome": "Jenifer",
@@ -88,15 +94,17 @@ Response:
         "localidade": "Magé",
         "uf": "RJ"
  }
+ ```
  
  Exemplo:
- curl --location --request GET 'http://localhost:8080/pessoa/documento/121231414'
+``` curl --location --request GET 'http://localhost:8080/pessoa/documento/121231414'```
  
 ## Consultar pessoa por Id
 
 GET 'http://localhost:8080/pessoa/60a0788a476a3b229509b326'
 
 Response:
+```
 {
     "id": "60a0788a476a3b229509b326",
     "nome": "Jenifer",
@@ -107,9 +115,9 @@ Response:
     "localidade": "Magé",
     "uf": "RJ"
 }
-
+```
 Exemplo:
-curl --location --request GET 'http://localhost:8080/pessoa/60a0788a476a3b229509b326'
+```curl --location --request GET 'http://localhost:8080/pessoa/60a0788a476a3b229509b326'```
 
 
 
